@@ -17,13 +17,13 @@ const Home = ({ setActiveSection }) => {
           A supportive and inclusive environment for women interested in contributing to the Ethereum protocol through hands-on, collaborative learning.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button 
+          <button
             onClick={() => setActiveSection('join')}
             className="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
           >
             Join the Community
           </button>
-          <button 
+          <button
             onClick={() => setActiveSection('about')}
             className="border border-purple-600 text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors"
           >
@@ -48,6 +48,16 @@ const Home = ({ setActiveSection }) => {
           <h3 className="text-xl font-semibold text-gray-900 mb-2">Mentorship</h3>
           <p className="text-gray-600">Access mentors, resources, and guidance to help you succeed throughout your learning journey.</p>
         </div>
+      </div>
+      <div className="text-center">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSev1MtjHptZ4sX_aUn7r3BL3aCJrpWetJ5Kknag4GxifCFcnw/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
+        >
+          Subscribe to Our Newsletter
+        </a>
       </div>
     </div>
   );
